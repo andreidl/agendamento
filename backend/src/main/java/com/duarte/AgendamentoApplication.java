@@ -28,12 +28,12 @@ public class AgendamentoApplication {
             BigDecimal valor = new BigDecimal("1000");
 
             List<LocalDate> datasTransferencia = List.of(
-                    LocalDate.parse("2025-05-16"),
-                    LocalDate.parse("2025-05-17"),
-                    LocalDate.parse("2025-05-27"),
-                    LocalDate.parse("2025-06-06"),
-                    LocalDate.parse("2025-06-16"),
-                    LocalDate.parse("2025-06-26")
+                    hoje,
+                    hoje.plusDays(1),
+                    hoje.plusDays(11),
+                    hoje.plusDays(21),
+                    hoje.plusDays(31),
+                    hoje.plusDays(41)
             );
 
             for (LocalDate data : datasTransferencia) {
